@@ -29,8 +29,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+#PRODUCT_PACKAGES += \
+#    NoCutoutOverlay
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -58,12 +58,11 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
     libqcomfm_jni \
     init.qti.fm.sh \
     qcom.fmradio
 
-PRODUCT_BOOT_JARS += qcom.fmradio
+# PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Init
 PRODUCT_PACKAGES += \
@@ -74,11 +73,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
     com.android.nfc_extras \
-    SecureElement \
-    NfcNci \
     nqnfcee_access.xml \
-    nqnfcse_access.xml \
-    Tag
+    nqnfcse_access.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
