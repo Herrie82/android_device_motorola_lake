@@ -41,16 +41,16 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
+#PRODUCT_PACKAGES += \
+#    otapreopt_script \
+#    update_engine \
+#    update_engine_sideload \
+#    update_verifier
 
 # The following modules are included in debuggable builds only.
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl \
-    update_engine_client
+#PRODUCT_PACKAGES_DEBUG += \
+#    bootctl \
+#    update_engine_client
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
